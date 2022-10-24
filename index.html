@@ -1,193 +1,139 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <style>
-    :root {
-      --white: #FFFFFF;
-      --black: #000000;
-      --very-light-pink: #C7C7C7;
-      --text-input-field: #F7F7F7;
-      --hospital-green: #ACD9B2;
-      --sm: 14px;
-      --md: 16px;
-      --lg: 18px;
-    }
-    body {
-      background: lavender;
-      margin: 0;
-      font-family: 'Quicksand', sans-serif;
-    }
-    nav {
-      background: slateblue;
-      display: flex;
-      justify-content: space-between;
-      padding: 0 24px;
-      border-bottom: 1px solid var(--very-light-pink);
-    }
-    .menu {
-      display: none;
-      width: 100px;
-    }
-    
-    .logo {
-      width: 100px;
-    }
-    .navbar-left ul,
-    .navbar-right ul {
-      list-style: none;
-      padding: 0;
-      margin: 0;
-      display: flex;
-      align-items: center;
-      height: 60px;
-    }
-    .contenido{
-      background:lavender;
-      align-items: center;
-      justify-content: center;
-    }
-    .container{
-      display: flexbox;
-    }
-    .navbar-left {
-      display: flex;
-    }
-    .navbar-left ul {
-      margin-left: 12px;
-    }
-    .navbar-left ul li a,
-    .navbar-right ul li a {
-      text-decoration: none;
-      color: whitesmoke;
-      border: 1px solid lightseagreen;
-      padding: 5px;
-      border-radius: 8px;
-    }
-    .navbar-left ul li a:hover,
-    .navbar-right ul li a:hover {
-      border: 1px solid blue;
-      color:blueviolet;
-    }
-    .navbar-email {
-      color: whitesmoke;
-      font-size: var(--sm);
-      margin-right: 12px;
-    }
-    .navbar-shopping-cart {
-      position: relative;
-    }
-    .navbar-shopping-cart div {
-      width: 16px;
-      height: 16px;
-      background-color: var(--hospital-green);
-      border-radius: 50%;
-      font-size: var(--sm);
-      font-weight: bold;
-      position: absolute;
-      top: -6px;
-      right: -3px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-    .mapouter{
-        position:relative;
-        text-align:right;
-        width:600px;
-        height:400px;
-      }
-      .gmap_canvas {
-          overflow:hidden;
-          background:none!important;
-          width:600px;
-          height:400px;
-      }
-      .gmap_iframe {
-            width:600px!important;
-            height:400px!important;
-      }
-    .Semillero{
-        width: 90px;
-        height: 50px;
-    }
-    @media (max-width: 640px) {
-      .menu {
-        display: block;
-      }
-      .logo{
-        display:none;
-      }
-      .navbar-left ul {
-        display: none;
-      }
-      .navbar-email {
-        display: none;
-      }
-    }
-  </style>
-</head>
-<body>
-  <nav>
-    <img src="./01_Logo_Positivo.png" alt="menu" class="menu">
-
-    <div class="navbar-left">
-      <img src="./01_Logo_Blanco.png" alt="logo" class="logo">
-      <ul>
-        <li>
-          <a href="https://www.escuelaing.edu.co/es/">ECI</a>
-        </li>
-        <li>
-          <a href="https://ieee-aess.org">AESS</a>
-        </li>
-        <li>
-          <a href="https://www.ieee.org">IEEE</a>
-        </li>
-        <li>
-          <a href="https://instagram.com/semilleroastro_space?igshid=YmMyMTA2M2Y=">Astro Space</a>
-        </li>
-        <li>
-          <a href="https://es.wikipedia.org/wiki/Cansat">¿Que es un CANSAT? </a>
-        </li>
-      </ul>
-    </div>
-
-    <div class="navbar-right">
-      <ul>
-        <li class="navbar-email">CANSAT Astro Space</li>
-        <li class="navbar-shopping-cart">
-          <img src="./AstroSpace Horizontal.png" alt="Semillero" class="Semillero">
-        </li>
-      </ul>
-    </div>
-  </nav>
-  <div class="contenido">
-    <h1 class="container" id="txt1">
-     <div class="item">EL trabajo de nuestra mision</div>
-    </h1>
-    <div>
-     <p>
-       <img src="" alt="Ave 1"> Informacion Aves
-     </p>
-    </div>
-    <h1 class="container" id="txt2">
-     <div class="item">Como lo hemos logrado</div>
-    </h1>
-    <div>
-     <p>
-       <img src="" alt="CANSAT"> Informacion Mision CANSAT
-     </p>
-    </div>
-  </div>
-  <div class="mapa">
-    <div class="mapouter">
-      <div class="gmap_canvas">
-        <iframe class="gmap_iframe" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=escuela Colombiana de ingenieria&amp;t=&amp;z=12&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"> 
-        </iframe>
-        <a href="https://mcpenation.com/">MCPE Nation</a>
-  </div>
-</body>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device=width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Página web Astrospace</title>
+        <link rel="shortcut icon" href="./icon.png" type="image/x-icon">
+        <link rel="stylesheet" href="./estilos.css">
+    </head>
+    <body>
+        <header>
+            <nav>
+                <a href="https://www.escuelaing.edu.co/es/">ECI</a>
+                <a href="https://ieee-aess.org">AESS</a>
+                <a href="https://www.ieee.org">IEEE</a>
+                <a href="https://instagram.com/semilleroastro_space?igshid=YmMyMTA2M2Y=">Astro Space</a>
+                <a href="https://es.wikipedia.org/wiki/Cansat">¿Que es un CANSAT? </a>
+            </nav>
+            <section class="textos-header">
+                <h1>SEMILLERO DE INGENIERÍA AEROESPACIAL</h1>
+                <h2>ESCUELA COLOMBIANA DE INGENIERÍA JULIO GARAVITO</h2>
+            </section>
+            <div class="wave" style="height: 150px; overflow: hidden;" >
+                <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;">
+                    <path d="M0.00,49.98 C149.99,150.00 349.20,-49.98 500.00,49.98 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: #fff;"></path></svg></div>
+        </header>
+        <main>
+            <section class="contenedor sobre-nosotros">
+                <h2 class="titulo">CANSAT</h2>
+                <div class="contenedor-sobre-nosotros">
+                    <img src="./astrospace.jpeg" alt="" class="imagen-about-us">
+                    <div class="contenido-textos">
+                        <h3><span>1</span>Acerca de nuestra misión:</h3>
+                        <p>Información sobre aves .......nsectetur adipisicing elit. Odio inventore modi, molestiae sed omnis ex repellat numquam vitae consequatur excepturi perferendis placeat ut aspernatur repudiandae dolorum. Magni quos vel maxime?</p>
+                        <h3><span>2</span>Como lo hemos logrado:</h3>
+                        <p>Información misión CANSAT.....nsectetur adipisicing elit. Odio inventore modi, molestiae sed omnis ex repellat numquam vitae consequatur excepturi perferendis placeat ut aspernatur repudiandae dolorum. Magni quos vel maxime?</p>
+                    </div>
+                </div>
+            </section>
+            <section class="mapa">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3975.9259709976786!2d-74.04479988590977!3d4.782720642274246!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f85e32ae0ca4b%3A0x5edd4c74e8f7220c!2sEscuela%20Colombiana%20de%20Ingenier%C3%ADa%20Julio%20Garavito!5e0!3m2!1ses!2sco!4v1665991071213!5m2!1ses!2sco" width="900" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>"
+            </section>
+            <section class="portafolio">
+                <div class="contenedor">
+                    <h2 class="titulo">ACTIVIDADES</h2>
+                    <div class="galeria-port">
+                        <div class="imagen-port">
+                            <img src="./grupo1.jpeg" alt="">
+                            <div class="hover-galeria">
+                                <img src="./icon.png" alt="">
+                                <p>ROVER 2022</p>
+                            </div>
+                        </div>
+                        <div class="imagen-port">
+                            <img src="./grupo2.jpeg" alt="">
+                            <div class="hover-galeria">
+                                <img src="./icon.png" alt="">
+                                <p>ZAGI 2022</p>
+                            </div>
+                        </div>
+                        <div class="imagen-port">
+                            <img src="./grupo3.jpeg" alt="">
+                            <div class="hover-galeria">
+                                <img src="./icon.png" alt="">
+                                <p>Nuestro trabajo</p>
+                            </div>
+                        </div>
+                        <div class="imagen-port">
+                            <img src="./grupo1.jpeg" alt="">
+                            <div class="hover-galeria">
+                                <img src="./icon.png" alt="">
+                                <p>Nuestro trabajo</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="clientes contenedor">
+                <h2 class="titulo">CONSEJEROS</h2>
+                <div class="cards">
+                    <div class="card">
+                        <img src="./hernan.jpg" alt="">
+                        <div class="contenido-texto-card">
+                            <h4>HERNAN PAZ PENAGOS</h4>
+                            <p>Profesor titular de la Escuela Colombiana de Ingeniería Julio Garavito, doctor en Educación; magister en Teleinformática e Ingeniero Electrónico de la Universidad Distrital Francisco José de Caldas; Ingeniero Electricista y licenciado en Filosofía e Historia.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="./teuta.jpg" alt="">
+                        <div class="contenido-texto-card">
+                            <h4>GUILLERMO TEUTA GOMEZ</h4>
+                            <p>Profesor titular de la Escuela Colombiana de Ingeniería Julio Garavito, magister en Ingeniería con Enfasis en Telecomunicaciones y especialista en Telecomunicaciones de la Universidad Pontificia Bolivariana.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="about-services">
+                <div class="contenedor">
+                    <h2 class="titulo">PROYECTOS A FUTURO</h2>
+                    <div class="servicio-cont">
+                        <div class="servicio-ind">
+                            <img src="./escuela.jpeg" alt="">
+                            <h3>ZAGI 2023</h3>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis, ducimus?</p>
+                        </div>
+                        <div class="servicio-ind">
+                            <img src="./escuela.jpeg" alt="">
+                            <h3>ROVER 2023</h3>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis, ducimus?</p>
+                        </div>
+                        <div class="servicio-ind">
+                            <img src="./escuela.jpeg" alt="">
+                            <h3>CUBESAT 2023</h3>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis, ducimus?</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div class="contenedor-footer">
+                <div class="content-foo">
+                    <h4>Teléfono</h4>
+                    <p>16683600</p>
+                </div>
+                <div class="content-foo">
+                    <h4>Dirección</h4>
+                    <p>AK 45 (Autonorte) #205-59, Bogotá, Cundinamarca</p>
+                </div>
+                <div class="content-foo">
+                    <h4>Email</h4>
+                    <p>semillero.astrospace@escuelaing.edu.co</p>
+                </div>
+            </div>
+            <h2 class="titulo-final">&copy; Semillero AstroSpace | Escuela Colombiana de Ingenieria Julio Garavito </h2>
+        </footer>
+    </body>
 </html>
