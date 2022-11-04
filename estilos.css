@@ -30,9 +30,9 @@ header{
     height: 1000px;
     background: #03001e; 
      /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #701c58, hsla(316, 83%, 57%, 0.658), hsla(276, 97%, 38%, 0.644), #03001e),url(../css/astrospace.jpeg); 
+    background: -webkit-linear-gradient(to right, #701c58, hsla(316, 83%, 57%, 0.658), hsla(276, 97%, 38%, 0.644), #03001e),url(./astrospace.jpeg); 
       /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #ce79b6, hsla(316, 46%, 42%, 0.658), hsla(276, 97%, 38%, 0.644), #03001e),url(../css/astrospace.jpeg); 
+    background: linear-gradient(to right, #ce79b6, hsla(316, 46%, 42%, 0.658), hsla(276, 97%, 38%, 0.644), #03001e),url(./astrospace.jpeg); 
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     background-size: cover;
     background-attachment: fixed;
